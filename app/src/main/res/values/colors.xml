@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#808080</color>
+    <color name="colorPrimaryDark">#1F1F1F</color>
+    <color name="colorAccent">#FF8000</color>
+    <color name="colorSecondary">#FFEF00</color>
+    <color name="primaryBlue">#00868B</color>
+    <color name="secondaryBlue">#70DBDB</color>
+    <color name="primaryGreen">#698B22</color>
+    <color name="secondaryGreen">#AADD00</color>
+    <color name="primaryRed">#FF0000</color>
+    <color name="secondaryRed">#EE5C42</color>
+    <color name="book_loading_background">#1F1F1F</color>
+    <color name="book_loading_book">#FFEF00</color>
+    <color name="book_loading_page">#1F1F1F</color>
+</resources>

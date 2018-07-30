@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CastDisplayActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarCastDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            style="@style/AppTheme.PopUpOverlay"
+            app:layout_scrollFlags="enterAlways|scroll">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_movie_icon_round"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbarTextViewCast"
+                    android:textSize="30dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/colorSecondary"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/cast_header_pic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorSecondary"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:text="Biography"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonOverview"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorSecondary"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:text="birthday"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonBday"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorSecondary"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:text="deathday"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonDeath"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorSecondary"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic"
+                android:text="place of birth"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonPlaceOfBirth"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOVIES"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondary"
+                android:layout_margin="8dp"
+                android:textSize="24dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonMovies">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TV SHOWS"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondary"
+                android:textSize="24dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castPersonTVShows">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

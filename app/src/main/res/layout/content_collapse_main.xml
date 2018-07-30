@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/ratingStar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_stars_black_24dp" />
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="3dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSecondary"
+            android:textSize="24dp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVERVIEW"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+
+    <TextView
+        android:id="@+id/movieDescription"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RELEASE DATE"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+
+    <TextView
+        android:id="@+id/movieDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUNTIME"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+
+    <TextView
+        android:id="@+id/movieRunTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAILERS"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trailers"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAST MEMBERS"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cast"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIMILAR MOVIES"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/similarMovies"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recommended movies"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommendedMovies"
+        android:layout_marginBottom="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

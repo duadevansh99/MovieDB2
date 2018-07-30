@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/titleCollapse"
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/genreCollapse"
+            android:textColor="@color/colorSecondary"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/genreCollapse" />
+
+        <TextView
+            android:id="@+id/genreCollapse"
+            android:layout_width="221dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorSecondary"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateLoadingMovieImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:loading_width="5dp"
+            app:loading_color="@color/colorSecondary"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom|left"
+            android:scaleType="fitXY"/>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
